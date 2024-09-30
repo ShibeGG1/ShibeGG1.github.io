@@ -3,46 +3,63 @@
 <head>
 <style>
 ul {
-	list-style-type: none;
-	margin: 0,
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 50px;
 }
-	
+
 li {
-	float: left;
-	}
-	
+    float: left;
+}
+
 li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 15px 20px;
-	text-decoration: none;
-	}
-	
-	li a:hover:not(.active) {
-		background-color: #111;
-	}
-	.active {
-		background-color: #04AA6D;
-	}
-	
-	</style>
-	</head>
-	
-<head>
-	<title>Josh's Homepage</title>
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/* Add a class to the dropdown ul */
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    background-color: #f9f9f9;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+li:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Prevent the dropdown from widening the parent li */
+.dropdown-menu li {
+    float: none;
+}
+</style>
 </head>
+
 <body>
-	<nav>
-		<ul>
-		<li><a href="index.html" style="font-family: Monaco, sans-serif;">Home</a></li>
-		<li><a href="about.html" style="font-family: Monaco, sans-serif;">About</a></li>
-		<li><a class="active" style="font-family: Monaco, Sans serif;" href="#downloads">Downloads</a>
-		<ul class="dropdown-menu">
+    <nav>
+        <ul>
+            <li><a href="index.html" style="font-family: Monaco, sans-serif;">Home</a></li>
+            <li><a href="about.html" style="font-family: Monaco, sans-serif;">About</a></li>
+            <li><a class="active" style="font-family: Monaco, Sans serif;" href="#downloads">Downloads</a>
+                <ul class="dropdown-menu">
                     <li><a href="#">Utilities</a>
                         <ul>
                             <li><a href="#">Windows Phone</a></li>
@@ -51,12 +68,12 @@ li a {
                 </ul>
             </li>
         </ul>
-		
-	</nav>
-	<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:200px;">
-	<h1 style="font-family: Monaco, sans-serif;"><b>Downloads!</b></h1>
-	<p style="font-family: Monaco, sans-serif;">Page full of miscelleanous downloads and utilities</p>
-	</div>
-	
+    </nav>
+    <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+        <h1 style="font-family: Monaco, sans-serif;"><b>Downloads!</b></h1>
+        <p style="font-family: Monaco, sans-serif;">Page full of miscelleanous downloads and utilities</p>
+		<h2 style="font-family: Monaco, sans-serif;">Windows Phone Downloads:</h2>
+		<a href="https://raw.githubusercontent.com/ShibeGG1/ShibeGG1.github.io/main/downloads/windowsphone/Windows10Updater.zip">Download Windows 10 Updater</a>
+    </div>
 </body>
 </html>
