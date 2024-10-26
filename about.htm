@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="ga">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>My Pretty Cool Website</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!--mstheme--><link rel="stylesheet" type="text/css" href="_themes/classic/clas1011.css"><meta name="Microsoft Theme" content="classic 1011">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button7.jpg', /*url*/'button6.jpg', /*url*/'buttonC.jpg', /*url*/'buttonD.jpg', /*url*/'button1D.jpg', /*url*/'button1E.jpg', /*url*/'button2A.jpg', /*url*/'button2B.jpg')">
+
+<div style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<h1 align="center"><u>Josh's Pretty cool website!</u></h1>
+</div>
+<h2 align="center"><a href="josh.htm">
+<img border="0" id="img4" src="buttonB.jpg" height="20" width="100" alt="Home" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonC.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonB.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonD.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonC.jpg')" fp-style="fp-btn: Border Bottom 2" fp-title="Home"></a><img border="0" id="img2" src="button5.jpg" height="20" width="100" alt="About" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button6.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button5.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button7.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button6.jpg')" fp-style="fp-btn: Border Bottom 2; fp-orig: 0" fp-title="About"><a href="Socials.htm"><img border="0" id="img5" src="button1C.jpg" height="20" width="100" alt="Socials" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'button1D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'button1C.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'button1E.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'button1D.jpg')" fp-style="fp-btn: Border Bottom 2" fp-title="Socials"></a><a href="downloads.htm"><img border="0" id="img6" src="button29.jpg" height="20" width="100" alt="Downloads" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button2A.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button29.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button2B.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button2A.jpg')" fp-style="fp-btn: Border Bottom 2" fp-title="Downloads"></a><br>
+About</h2>
+<p align="center">Hello, this is my about page. Theres not much to write about 
+me, but I'm from Ireland, I like computers, old things, electronics and cars.</p>
+<h3 align="center">My Computer</h3>
+<p align="center">I have made this website on Frontpage 2003 on my Windows XP 
+machine (Dell Optiplex 780 which i somehow managed to get windows xp on)<br>
+Every time I want to boot windows XP, i have to go into the bios and change the 
+hard drive mode to legacy, and to install xp i had to enable an<br>
+OS install feature which limited the ram to 256MB. Its a pretty cool machine, i 
+think i prefer it on XP even though it runs Windows 7 flawlessly.<br>
+I also have another hard drive which is 1TB and i frequently swap the XP hard 
+drive around with that one which has Ubuntu 24.04 LTS on it<br>
+and I have a Plex server running on that. I only have a few movies but I will 
+probably load it in the future with more movies, it helps using Qbittorrent to 
+download movies.<br>
+I might upgrade the CPU soon, its hard to get another CPU worth your money 
+nowadays that will support this relic of a computer.<br>
+I'd also upgrade the ram but I just havent gotten around to that. The GPU 
+situation however is complicated.<br>
+The optiplex is a Small Form Factor (SFF) model so its really small and will 
+only fit small GPU's in it. To add to that, the power supply<br>
+is smaller and doesnt have any gpu power wires, hell it only has one hard drive 
+power cable!<br>
+I also have a card reader in it from another Dell machine, but its loose in the 
+case. Well, thats enough waffling from me. The specs for the optiplex are listed 
+below.<br>
+<br>
+320 GB 7200 RPM Western Digital Hard Drive<br>
+4GB DDR3 RAM<br>
+Slimline DVD-RW drive<br>
+Card Reader of some sort<br>
+Intel Core 2 Duo E7400<br>
+Intel Integrated Graphics<br>
+&nbsp;</p>
+
+</body>
+
+</html>
